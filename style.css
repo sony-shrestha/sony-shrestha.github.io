@@ -1,0 +1,185 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f7f7f7;
+    color: #333;
+}
+
+a {
+    color: #0077cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1, h2 {
+    margin-bottom: 10px;
+}
+
+/* Header */
+header {
+    background-color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 5px;
+}
+
+/* Navigation styles */
+.top-nav {
+    background: #222;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.top-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 12px 0;
+    margin: 0;
+    gap: 30px;
+}
+
+.top-nav ul li {
+    margin: 0 20px;
+}
+
+.top-nav ul li a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.top-nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* SECTIONS */
+.section-box {
+    background: white;
+    padding: 25px;
+    margin: 25px auto;
+    max-width: 1000px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* ABOUT & PROFILE */
+.about-profile-container {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.about-left {
+    flex: 2;
+}
+
+.photo-right {
+    flex: 1;
+}
+
+.profile-pic {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.social-icons-row {
+    display: flex;
+    justify-content: flex-start; 
+    margin-top: 20px;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.social-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.social-icon i {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.social-icon span {
+    font-size: 14px;
+    text-align: center;
+}
+
+.social-icon:hover {
+    color: #0077cc;
+    cursor: pointer;
+}
+
+
+/* Reference links */
+.ref-link {
+    color: #0077cc; 
+    text-decoration: underline;
+}
+
+.ref-link:hover {
+    color: #ff6600; 
+}
+
+
+/* Back to Top Button */
+#topBtn {
+    display: none; 
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 50%;
+}
+
+#topBtn:hover {
+    background-color: #45a049;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .about-profile-container {
+        flex-direction: column;
+        text-align: center;
+    } 
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
